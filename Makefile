@@ -2,11 +2,11 @@ CC=gcc
 
 all:	clean client server
 
-client:	client.c
-	${CC} -o client client.c
+client:	src/client.c
+	${CC} -o client src/client.c
 
-server: server.c
-	${CC} -o server server.c -lpthread
+server: src/server.c
+	${CC} -o server src/server.c -lpthread
 
 clean: 
 	rm -f client
